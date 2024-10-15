@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Página Web</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Darturo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Acerca de</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contenido principal -->
+  <div class="container">
+
+    <!-- Mensaje de bienvenida -->
+    <div class="text-center my-5">
+      <h1>¡Bienvenido a Mi Página Web!</h1>
+      <p class="lead">Explora nuestro contenido y descubre todo lo que tenemos para ofrecerte.</p>
+    </div>
+
+    <!-- Carrusel de imágenes -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://images.unsplash.com/photo-1728755833852-2c138c84cfb1?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="Imagen 1">
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1644597286776-ab5b5802f67f?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="Imagen 2">
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1664710476481-1213c456c56c?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="Imagen 3">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+
+    <!-- Botones -->
+    <div class="text-center my-5">
+      <button class="btn btn-primary m-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Mostrar Modal</button>
+      <button class="btn btn-success m-2" onclick="cambiarColor()">Cambiar Color de Fondo</button>
+      <button class="btn btn-danger m-2" onclick="ocultarTexto()">Ocultar Texto</button>
+    </div>
+
+    <!-- Texto Ocultable -->
+    <div class="container my-5 text-center" id="textoOcultable">
+      <h3>¿Qué es Lorem Ipsum?</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel ullamcorper ex, a pharetra sapien. Fusce faucibus sollicitudin dictum. Donec ac accumsan quam. Fusce sit amet cursus ex. Quisque elit massa, feugiat vitae luctus at, rutrum non purus. Sed iaculis arcu nec ipsum eleifend, cursus euismod tortor convallis. Duis sed eros non massa molestie tincidunt. Proin convallis lectus vel mi rutrum aliquet. Suspendisse efficitur elementum ante vel ornare. Pellentesque a iaculis nisl. Praesent vel facilisis elit. Pellentesque ultricies erat in augue accumsan, eget viverra erat ultricies. Nullam vel bibendum risus, sit amet suscipit metus. Phasellus ornare purus eu mauris lobortis bibendum. Sed dignissim maximus justo quis sollicitudin.
+      </p>
+      <h3>¿De dónde viene?</h3>
+      <p>
+        Praesent vel accumsan metus, sed molestie diam. Praesent vitae egestas diam, eget auctor purus. Vestibulum quis tellus placerat, fermentum tortor vel, vestibulum tellus. Nullam ultricies suscipit lectus fermentum tincidunt. Nunc at efficitur urna. Donec porttitor urna bibendum, tincidunt nibh id, scelerisque augue. Ut viverra, massa eu vulputate luctus, ligula turpis dapibus mi, ac ultrices ex risus a erat. Sed mi urna, semper ultricies rhoncus sed, euismod nec odio. Mauris non purus ac enim gravida pellentesque rutrum id nisi. Pellentesque et pellentesque lectus. Nulla posuere mi eu quam scelerisque, ut mattis quam facilisis. Duis ornare mi nec eros fermentum, vitae tincidunt mi malesuada. Etiam at nunc pharetra, ultricies justo sagittis, venenatis augue. Curabitur id augue commodo, eleifend diam vel, eleifend justo.
+      </p>
+      <h3>¿Por qué lo usamos?</h3>
+      <p>
+        Pellentesque condimentum mi quam, semper tincidunt dolor accumsan id. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam diam libero, rutrum ac dolor eget, iaculis imperdiet arcu. Nam sed placerat enim, ac posuere justo. Pellentesque sit amet ex rhoncus, commodo quam eu, fringilla urna. Morbi varius eros nec nisl rutrum feugiat. Curabitur mauris enim, facilisis id porttitor ac, faucibus et augue. Nulla facilisi. Fusce a rhoncus eros. Morbi tincidunt sollicitudin tempus.
+
+Nunc nunc ante, consectetur eget est sit amet, ullamcorper gravida est. Duis quis leo quis tellus pellentesque varius. Praesent vitae augue non dui congue venenatis non vitae dui. Nunc eu facilisis diam. Vestibulum finibus mi sem, in vehicula libero varius at. Aliquam erat volutpat. In a libero volutpat, scelerisque eros ut, ornare nibh. Donec vel volutpat mi. Aenean auctor consectetur urna non iaculis. Nunc eu metus eget sem sollicitudin fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum facilisis leo at vehicula. Nunc facilisis posuere leo, ac imperdiet purus viverra et. Ut quis odio vestibulum, ultrices ligula sed, facilisis mauris. Sed eleifend porta justo, vel egestas orci dictum quis. Suspendisse sed metus sit amet quam feugiat venenatis vitae vel ipsum.
+      </p>
+    </div>
+
+  </div> <!-- Fin del contenedor principal -->
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <p>&copy; 2023 Mi Página Web. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Bienvenido</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          Este es un mensaje dentro de un modal. Puedes cerrarlo cuando quieras.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script>
+    // Cambiar color de fondo a un color aleatorio
+    function cambiarColor() {
+      const randomColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+      document.body.style.backgroundColor = randomColor;
+    }
+
+    // Ocultar o mostrar el texto
+    function ocultarTexto() {
+      const texto = document.getElementById('textoOcultable');
+      texto.style.display = texto.style.display === 'none' ? 'block' : 'none';
+    }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
